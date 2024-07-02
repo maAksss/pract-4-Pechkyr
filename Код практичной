@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int count = 0;
+
+    printf("Введіть натуральне число n: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        if (n % i == n / i) {
+            count++;
+        }
+    }
+
+    printf("Кількість рівних дільників числа %d: %d\n", n, count);
+
+    return 0;
+}
